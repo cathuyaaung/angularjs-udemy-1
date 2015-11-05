@@ -54,7 +54,7 @@ https://www.udemy.com/learn-angularjs/learn/#/
 	```
 
 # HTML boilerplate with Bootstrap 3, jQuery, AngularJS from bower_components
-	```HTML
+	```html
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
