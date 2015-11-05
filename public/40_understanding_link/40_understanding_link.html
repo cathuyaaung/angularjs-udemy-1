@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Boilerplate</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Bootstrap Theme -->
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<script src="/bower_components/angular/angular.min.js"></script>
+	<script src="/40_understanding_link/40_understanding_link.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h3><a href="/">Main</a></h3>
+	</div>
+	<div class="container" ng-controller="mainCtrl">
+		<h1>40.</h1>
+		<hr>
+		<div class="list-group">
+			<h3>Understanding 'Link'</h3>
+			<div class="well">
+				<p>
+					<br>// link -> (runs whenever directive loads template and binds with scope data)
+					<br>// Use it to manipulate DOM as directive is being run
+				</p>
+			</div>
+			<search-result-with-object-function
+			 	ng-repeat="person in peoples"
+				result-object="person"
+				formatted-address-function="formattedAddress(p1)">
+			</search-result-with-object-function>			
+		</div>
+
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap Javascript -->
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>	

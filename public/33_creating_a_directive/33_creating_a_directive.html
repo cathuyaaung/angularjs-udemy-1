@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Boilerplate</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Bootstrap Theme -->
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<script src="/bower_components/angular/angular.min.js"></script>
+	<script src="/33_creating_a_directive/33_creating_a_directive.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h3><a href="/">Main</a></h3>
+	</div>
+	
+	<div class="container" ng-controller="mainCtrl">
+		<h1>{{title}}</h1>
+		<h2>AngularJS - Directives</h2>
+		<div class="well">
+			<p>
+			- directive template attribute needs to be in single line <br>
+			- replace true -> replaces < directive > tag with html completely <br>
+			- E -> < search-result >		Element <br>
+			- A -> < div search-result >	Attribute <br>
+			</p>
+		</div>
+		<div class="well">
+			<label for="search">Search</label>
+			<input type="text" id="search">
+			<h3>Search Results</h3>
+
+			<div class="list-group">
+
+				<search-result></search-result>
+				<div search-result></div>
+				
+				<div class="search-result"></div>
+				<!-- directive: search-result -->
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap Javascript -->
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>	

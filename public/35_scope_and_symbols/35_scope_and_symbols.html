@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Boilerplate</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Bootstrap Theme -->
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<script src="/bower_components/angular/angular.min.js"></script>
+	<script src="/35_scope_and_symbols/35_scope_and_symbols.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h3><a href="/">Main</a></h3>
+	</div>
+	<div class="container" ng-controller="mainCtrl">
+		<h1>35. Scope (@, =, and other obtuse symbols)</h1>
+		<hr>
+		<search-result
+			result-title="{{person.name}}"
+			result-body="{{person.address}}">
+		</search-result>
+
+		<search-result
+			result-title="{{enemy.name}}"
+			result-body="{{enemy.address}}">
+		</search-result>
+
+		<search-result-with-object
+			result-object="resultObject">
+		</search-result-with-object>
+
+		<search-result-with-object-function
+			result-object="resultObject2"
+			formatted-address-function="formattedAddress(p1)">
+		</search-result-with-object-function>
+
+		<hr>
+
+		<div class="list-group">
+			<h3>Repeating directives</h3>
+			<search-result-with-object-function
+			 	ng-repeat="person in peoples"
+				result-object="person"
+				formatted-address-function="formattedAddress(p1)">
+			</search-result-with-object-function>			
+		</div>
+
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap Javascript -->
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>	

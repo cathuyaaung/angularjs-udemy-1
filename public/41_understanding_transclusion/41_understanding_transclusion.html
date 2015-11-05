@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Boilerplate</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Bootstrap Theme -->
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<script src="/bower_components/angular/angular.min.js"></script>
+	<script src="/41_understanding_transclusion/41_understanding_transclusion.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h3><a href="/">Main</a></h3>
+	</div>
+	<div class="container" ng-controller="mainCtrl">
+		<h1>41.</h1>
+		<hr>
+		<div class="list-group">
+			<h3>Understanding Transclusion</h3>
+			<div class="well">
+				<p>
+					<br>// Translusion
+					<br>// To include whatever is passed between directive tags
+					<br>// < search-result > To be included in directive render < / search-result >
+					<br>// In template
+					<br> < small > < ng-transclude > < / ng-transclude > < / small >
+					<br> < small ng-transclude > < / small >
+					<br>// In directive js
+					<br> transclude: true
+				</p>
+			</div>
+			<search-result-with-object-function
+			 	ng-repeat="person in peoples"
+				result-object="person"
+				formatted-address-function="formattedAddress(p1)">
+				Search results may not be valid
+			</search-result-with-object-function>			
+		</div>
+
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap Javascript -->
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>	
