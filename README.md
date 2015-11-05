@@ -15,7 +15,7 @@ https://www.udemy.com/learn-angularjs/learn/#/
 - npm init
 - npm install express -save
 - npm install bower --save
-
+- bower init 
 - bower install angular --save
 - bower install bootstrap --save
 - add .gitignore
@@ -82,3 +82,11 @@ https://www.udemy.com/learn-angularjs/learn/#/
 1. Sublime Text
 	1. Create full HTML tempalte
 		- Type ! and Tab or Type HTML:5 and Tab
+
+2. (Update NodeJS and NPM)[https://davidwalsh.name/upgrade-nodejs]
+
+	```
+	sudo npm cache clean -f
+	sudo npm install -g n
+	sudo n stable
+	```

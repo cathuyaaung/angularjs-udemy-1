@@ -1,7 +1,7 @@
 {
   "name": "angularjs-udemy-1",
   "version": "1.0.0",
-  "description": "Anthony Alicea - Learn and Understand AngularJS  \r https://www.udemy.com/learn-angularjs/learn/#/",
+  "description": "Anthony Alicea - Learn and Understand AngularJS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
