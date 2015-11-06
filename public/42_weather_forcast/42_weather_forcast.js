@@ -10,6 +10,7 @@ var app = angular.module('app',['ngRoute', 'ngResource'])
 })
 
 
+
 // Controllers
 .controller('homeCtrl',[
 '$scope', 'cityService', '$location',
