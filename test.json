@@ -1,0 +1,66 @@
+{
+  "city": {
+    "id": 5128581,
+    "name": "New York",
+    "coord": {
+      "lon": -74.005966,
+      "lat": 40.714272
+    },
+    "country": "US",
+    "population": 0
+  },
+  "cod": "200",
+  "message": 0.0265,
+  "cnt": 2,
+  "list": [
+    {
+      "dt": 1446739200,
+      "temp": {
+        "day": 293.06,
+        "min": 287.69,
+        "max": 295.4,
+        "night": 290.75,
+        "eve": 294.82,
+        "morn": 287.69
+      },
+      "pressure": 1036.43,
+      "humidity": 84,
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "speed": 1.32,
+      "deg": 198,
+      "clouds": 56
+    },
+    {
+      "dt": 1446825600,
+      "temp": {
+        "day": 292.24,
+        "min": 290.53,
+        "max": 295.48,
+        "night": 295.48,
+        "eve": 294.62,
+        "morn": 290.53
+      },
+      "pressure": 1027.51,
+      "humidity": 84,
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "speed": 4.11,
+      "deg": 214,
+      "clouds": 64,
+      "rain": 0.51
+    }
+  ]
+}
